@@ -10,7 +10,11 @@
  		<script type="text/javascript" src="js/MWBConfig.js"></script>
 		<script type="text/javascript">
 			document.addEventListener("deviceready",function(){
-				alert(typeof(scannerConfig));
+				alert(typeof(mwbScanner));
+				mwbScanner.setKey('eGOLoxW0nnqaV7t1lRQRsqbTCGGWRa0ptyT8l1shiUM=').then(function(response){
+					alert(response)
+						//response of the setKey action
+				  });
 			}
 			, false);
 		</script>
