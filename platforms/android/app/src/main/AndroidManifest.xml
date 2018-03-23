@@ -10,7 +10,7 @@
             </intent-filter>
         </activity>
         <activity android:configChanges="orientation|keyboardHidden" android:name="com.manateeworks.ScannerActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-		<meta-data android:name="MW_LICENSE_KEY" android:value="eGOLoxW0nnqaV7t1lRQRsqbTCGGWRa0ptyT8l1shiUM=" />
+        <meta-data android:name="MW_LICENSE_KEY" android:value="eGOLoxW0nnqaV7t1lRQRsqbTCGGWRa0ptyT8l1shiUM=" />
     </application>
     <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="26" />
     <uses-permission android:name="android.permission.CAMERA" />
