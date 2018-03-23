@@ -1,0 +1,19 @@
+{
+  "name": "info.digiteam.scanooz",
+  "version": "1.0.0",
+  "displayName": "Scanooz",
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "manateeworks-barcodescanner-v3": {}
+    }
+  },
+  "dependencies": {
+    "cordova-android": "~7.0.0",
+    "cordova-plugin-device": "^2.0.1",
+    "cordova-plugin-dialogs": "^2.0.1",
+    "manateeworks-barcodescanner-v3": "^3.0.49"
+  }
+}
