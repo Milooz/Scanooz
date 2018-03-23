@@ -14,7 +14,7 @@ scannerConfig = function(){
     */
     mwbScanner.setCallback(function(result){
       if(result && result.code){
-        //navigator.notification.alert(result.code, function(){}, result.type + (result.isGS1?" (GS1)":""), 'Close');
+        navigator.notification.alert(result.code, function(){}, result.type + (result.isGS1?" (GS1)":""), 'Close');
       }
       else
         console.log('No Result');
