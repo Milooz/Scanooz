@@ -87,8 +87,10 @@ scannerConfig = function(){
         //sets your key and loads your settings
         return mwbScanner.setKey(key).then(function(response){
             if(response)
+				navigator.notification.alert('VALID KEY');
                 console.log('VALID KEY');
             else
+				navigator.notification.alert('INVALID KEY');
                 console.log('INVALID KEY');
 
             return mwbScanner.loadSettings(settings)
