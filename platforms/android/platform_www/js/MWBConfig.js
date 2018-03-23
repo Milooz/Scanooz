@@ -76,7 +76,7 @@ scannerConfig = function(){
 
         //multi-platform keys object
         var keys = {
-            'Android'   : "VALID_ANDROID_KEY",
+            'Android'   : "eGOLoxW0nnqaV7t1lRQRsqbTCGGWRa0ptyT8l1shiUM=",
             'iOS'       : "VALID_IOS_KEY",
             'Win32NT'   : "VALID_WIN_WP8_KEY",
             'windows'   : "VALID_WIN_10_UWP_KEY"
@@ -87,8 +87,10 @@ scannerConfig = function(){
         //sets your key and loads your settings
         return mwbScanner.setKey(key).then(function(response){
             if(response)
+				navigator.notification.alert('VALID KEY');
                 console.log('VALID KEY');
             else
+				navigator.notification.alert('INVALID KEY');
                 console.log('INVALID KEY');
 
             return mwbScanner.loadSettings(settings)
